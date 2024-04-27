@@ -31,7 +31,7 @@ function App() {
       <Header></Header>
       <div className="main-wallpaper">
         <p>
-          <Wallpaper src="assets/wallpaper/4k_rooftop_webBG.png" />
+          <Wallpaper src="assets/wallpaper/4k_rooftop_webBG.webp" />
         </p>
         <Hover_content>
           <h1>Make music, </h1>
