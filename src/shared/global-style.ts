@@ -40,6 +40,7 @@ export const GlobalStyle = createGlobalStyle`
         display: flex;
         justify-content: space-between;
     }
+
     .nav-right ul > li {
         font-size: 18px;
         height: 100%;
@@ -59,12 +60,14 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #000000;
         margin-top:0px;
     }
+
     .footer > .logo {
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .copyrights {
         color: #ffffff;
         font-size: 12px;

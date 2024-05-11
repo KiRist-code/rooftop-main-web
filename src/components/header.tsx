@@ -1,19 +1,23 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <>
       <div className="header">
-        <div className="logo">Rooftop</div>
+        <div className="logo">
+          <Link to={"/"}>Rooftop</Link>
+        </div>
         <div className="nav-right">
           <nav>
             <ul>
               <li>
-                <a href="#">Compilation</a>
+                <Link to={"/compilation"}>Compilation</Link>
               </li>
               <li>
-                <a href="#">Releases</a>
+                <a href={"/release"}>Releases</a>
               </li>
               <li>
-                <a href="#">Artists</a>
+                <a href={"/artists"}>Artists</a>
               </li>
               <li>
                 <a href="#">Send Demo</a>
