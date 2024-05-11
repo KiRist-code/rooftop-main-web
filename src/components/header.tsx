@@ -14,13 +14,13 @@ function Header() {
                 <Link to={"/compilation"}>Compilation</Link>
               </li>
               <li>
-                <a href={"/release"}>Releases</a>
+                <Link to={"/release"}>Releases</Link>
               </li>
               <li>
-                <a href={"/artists"}>Artists</a>
+                <Link to={"/artists"}>Artists</Link>
               </li>
               <li>
-                <a href="#">Send Demo</a>
+                <Link to="#">Send Demo</Link>
               </li>
             </ul>
           </nav>
