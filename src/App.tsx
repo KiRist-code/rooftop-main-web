@@ -1,3 +1,4 @@
+import About from "./routes/about";
 import Artists from "./routes/artists";
 import Compilation from "./routes/compilation";
 import Home from "./routes/home";
@@ -9,6 +10,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
   {
     path: "/compilation",
