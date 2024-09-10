@@ -1,0 +1,32 @@
+{
+  "MAIWEI": {
+    "role": "Director / Composer",
+    "introduce": "As always, I will go my way.",
+    "profile": "MAIWEI.webp",
+    "link": "https://twitter.com/maiweimusic"
+  },
+  "KiRist": {
+    "role": "Director / Composer",
+    "introduce": "A Hardcore composer whose programming is mainstream. Aiming for 'Addictive Normal'.",
+    "profile": "KiRist.png",
+    "link": "https://twitter.com/kirist_work"
+  },
+  "Levid": {
+    "role": "Director / Composer",
+    "introduce": "I create music.",
+    "profile": "Levid.jpg",
+    "link": "https://twitter.com/Levid_ofc"
+  },
+  "AV3NTAR": {
+    "role": "Designer",
+    "introduce": "",
+    "profile": "",
+    "link": "https://twitter.com/Av3Ntar"
+  },
+  "Xeno": {
+    "role": "Designer / Composer",
+    "introduce": "",
+    "profile": "Xeno.png",
+    "link": "https://twitter.com/XenoSounds_"
+  }
+}

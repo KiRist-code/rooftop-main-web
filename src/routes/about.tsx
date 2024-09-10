@@ -3,7 +3,18 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import { Contact_warp, Contact_email } from "../components/about/contract";
 import { GlobalStyle } from "../shared/global-style";
-import { Member, Member_header, Member_title, Member_title_describtion, Member_warp, Memberlist } from "../components/about/member";
+import {
+  Member_ul,
+  Member_header,
+  Member_title,
+  Member_title_describtion,
+  Member_warp,
+  Member_li,
+  Profile,
+  Member,
+  Name_warp,
+} from "../components/about/member";
+import rooftopMember from "../data/RooftopMember.json";
 
 const Container_warp = styled.div`
   margin: 40px auto;
@@ -30,6 +41,8 @@ const Slogan = styled.div`
 `;
 
 const About = () => {
+  /* */
+
   return (
     <>
       <GlobalStyle />
@@ -55,9 +68,58 @@ const About = () => {
               We work. In Rooftop.
             </Member_title_describtion>
           </Member_header>
-          <Memberlist>
-            <Member>KiRist</Member>
-          </Memberlist>
+          <Member_ul>
+            {Object.keys(rooftopMember).map((value: string) => (
+              <Member_li>
+                <a
+                  href={rooftopMember[value as keyof typeof rooftopMember].link}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <Profile
+                    id="profile"
+                    style={{
+                      backgroundImage: `url(/images/profiles/${
+                        rooftopMember[value as keyof typeof rooftopMember]
+                          .profile
+                      })`,
+                    }}
+                  />
+                </a>
+                <Member>
+                  <Name_warp>
+                    <div
+                      id="name"
+                      style={{
+                        fontWeight: `550`,
+                      }}
+                    >
+                      {value}
+                    </div>
+                    <div
+                      id="role"
+                      style={{
+                        fontSize: `13px`,
+                      }}
+                    >
+                      {rooftopMember[value as keyof typeof rooftopMember].role}
+                    </div>
+                  </Name_warp>
+                  <div
+                    id="introduce"
+                    style={{
+                      fontSize: `13px`,
+                    }}
+                  >
+                    {
+                      rooftopMember[value as keyof typeof rooftopMember]
+                        .introduce
+                    }
+                  </div>
+                </Member>
+              </Member_li>
+            ))}
+          </Member_ul>
         </Member_warp>
       </Container_warp>
       <Footer></Footer>
