@@ -15,6 +15,15 @@ export const GlobalStyle = createGlobalStyle`
         - 400 normal
     */
 
+    html,
+    body {
+	    height: 100%;
+    }
+
+    #root {
+        height: 100%;
+    }
+
     a {
         text-decoration: none;
         color: #000000;

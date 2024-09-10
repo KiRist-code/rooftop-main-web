@@ -22,6 +22,7 @@ const Container_warp = styled.div`
   justify-content: left;
   flex-direction: column;
   font-family: "Montserrat Alternates";
+  min-height: calc(100% - 60px);
 `;
 
 const AboutHeader = styled.h1`

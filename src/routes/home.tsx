@@ -9,6 +9,7 @@ const Content_warp = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: calc(100% - 60px);
 `;
 
 const Hover_content = styled.div`
