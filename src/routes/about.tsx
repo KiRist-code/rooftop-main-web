@@ -32,6 +32,8 @@ const AboutHeader = styled.h1`
 
 const About_content = styled.div`
   margin: 10px;
+  font-family: "Montserrat";
+  line-height: 20px;
 `;
 
 const Slogan = styled.div`
@@ -109,6 +111,7 @@ const About = () => {
                     id="introduce"
                     style={{
                       fontSize: `13px`,
+                      lineHeight: `18px`,
                     }}
                   >
                     {
