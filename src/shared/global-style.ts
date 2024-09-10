@@ -40,6 +40,7 @@ export const GlobalStyle = createGlobalStyle`
         align-items: center;
         background-color: #ffffff;
         margin-bottom:0px;
+        position: relative;
     }
     .header > .logo {
         font-size: 25px;
@@ -78,6 +79,7 @@ export const GlobalStyle = createGlobalStyle`
         align-items: center;
         background-color: #000000;
         margin-top:0px;
+        position: relative;
     }
 
     .footer > .logo {

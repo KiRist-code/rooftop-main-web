@@ -6,7 +6,7 @@ import Wallpaper from "../components/main/wallpaper";
 const Content_warp = styled.div`
   margin: 0px;
   padding: 0px;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   min-height: calc(100% - 60px);
