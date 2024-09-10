@@ -2,7 +2,6 @@ import { styled } from "styled-components";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import { Contact_warp, Contact_email } from "../components/about/contract";
-import { GlobalStyle } from "../shared/global-style";
 import {
   Member_ul,
   Member_header,
@@ -47,7 +46,6 @@ const About = () => {
 
   return (
     <>
-      <GlobalStyle />
       <Header></Header>
       <Container_warp>
         <AboutHeader>About</AboutHeader>
@@ -93,7 +91,7 @@ const About = () => {
                     <div
                       id="name"
                       style={{
-                        fontWeight: `550`,
+                        fontWeight: `500`,
                       }}
                     >
                       {value}
