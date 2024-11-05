@@ -6,7 +6,7 @@ const Compil_container = styled.div`
   text-align: left;
   flex-direction: column;
   width: 100vw;
-  height: 30vh;
+  height: 300px;
   margin-bottom: 20px;
   font-family: "Montserrat";
 `;

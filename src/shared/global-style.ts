@@ -68,6 +68,14 @@ export const GlobalStyle = createGlobalStyle`
         align-items: center;
     }
 
+    .nav-right ul > li > a {
+        transition: all 0.3s;
+    }
+
+    .nav-right ul > li > a:hover {
+        color: #bababa;
+    }
+
     .footer & {
         width: 100;
         display: flex;
