@@ -39,10 +39,16 @@ const Compil_album_picture = styled.li<{ $background_src: string }>`
   background-repeat: no-repeat;
 `;
 
+const Compil_album_text = styled.span`
+  font-size: 13px;
+  font-weight: 400;
+`;
+
 export {
   Compil_container,
   Compil_container_title,
   Compil_album_container,
   Compil_album_map,
   Compil_album_picture,
+  Compil_album_text,
 };

@@ -8,6 +8,7 @@ import {
   Compil_album_container,
   Compil_album_picture,
   Compil_album_map,
+  Compil_album_text,
 } from "../components/compilation/albumComponent";
 import season_album from "../data/SeasonAlbum.json";
 import ep_album from "../data/EPAlbum.json";
@@ -55,6 +56,7 @@ const ContentWarp = styled.div`
 const Compilation = () => {
   const seasonCompil_album = useRef(season_album);
   const epCompil_album = useRef(ep_album);
+  // const { isClicked, setIsClicked } = useState(false);
 
   return (
     <>
@@ -85,7 +87,7 @@ const Compilation = () => {
                       ].webp_src
                     }
                   />
-                  <>{value}</> {/* TODO : edit text size and weight*/}
+                  <Compil_album_text>{value}</Compil_album_text>
                 </Compil_album_map>
               ))}
             </Compil_album_container>
@@ -106,7 +108,7 @@ const Compilation = () => {
                         .webp_src
                     }
                   />
-                  <>{value}</> {/* TODO : edit text size and weight*/}
+                  <Compil_album_text>{value}</Compil_album_text>
                 </Compil_album_map>
               ))}
             </Compil_album_container>
