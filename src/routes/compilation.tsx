@@ -2,17 +2,7 @@ import { styled } from "styled-components";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import { GlobalStyle } from "../shared/global-style";
-import {
-  Compil_container,
-  Compil_container_title,
-  Compil_album_container,
-  Compil_album_picture,
-  Compil_album_map,
-  Compil_album_text,
-} from "../components/compilation/albumComponent";
-import season_album from "../data/SeasonAlbum.json";
-import ep_album from "../data/EPAlbum.json";
-import { useRef } from "react";
+import { Compilation_warpper } from "../components/compilation/albumComponent";
 
 const Container_warp = styled.div`
   margin: 40px auto;
@@ -54,9 +44,9 @@ const ContentWarp = styled.div`
 `;
 
 const Compilation = () => {
-  const seasonCompil_album = useRef(season_album);
-  const epCompil_album = useRef(ep_album);
-  // const { isClicked, setIsClicked } = useState(false);
+  // const seasonCompil_album = useRef(season_album);
+  // const epCompil_album = useRef(ep_album);
+  // const { isShowPopup, setIsShowPopup } = useState(false);
 
   return (
     <>
@@ -70,49 +60,8 @@ const Compilation = () => {
           </TextDiv>
         </CompilationHeader>
         <ContentWarp>
-          <Compil_container>
-            <Compil_container_title>Season Compilation</Compil_container_title>
-            <Compil_album_container>
-              {Object.keys(seasonCompil_album.current).map((value: string) => (
-                <Compil_album_map>
-                  <Compil_album_picture
-                    key={
-                      seasonCompil_album.current[
-                        value as keyof typeof season_album
-                      ].id
-                    }
-                    $background_src={
-                      seasonCompil_album.current[
-                        value as keyof typeof season_album
-                      ].webp_src
-                    }
-                  />
-                  <Compil_album_text>{value}</Compil_album_text>
-                </Compil_album_map>
-              ))}
-            </Compil_album_container>
-          </Compil_container>
-          <Compil_container>
-            <Compil_container_title>
-              External Compilation
-            </Compil_container_title>
-            <Compil_album_container>
-              {Object.keys(epCompil_album.current).map((value: string) => (
-                <Compil_album_map>
-                  <Compil_album_picture
-                    key={
-                      epCompil_album.current[value as keyof typeof ep_album].id
-                    }
-                    $background_src={
-                      epCompil_album.current[value as keyof typeof ep_album]
-                        .webp_src
-                    }
-                  />
-                  <Compil_album_text>{value}</Compil_album_text>
-                </Compil_album_map>
-              ))}
-            </Compil_album_container>
-          </Compil_container>
+          <Compilation_warpper name={"Season"} /> {/* Season Compilation */}
+          <Compilation_warpper name={"External"} /> {/* Season Compilation */}
         </ContentWarp>
       </Container_warp>
       <Footer></Footer>

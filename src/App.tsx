@@ -1,3 +1,4 @@
+import NotFound from "./routes/404";
 import About from "./routes/about";
 import Artists from "./routes/artists";
 import Compilation from "./routes/compilation";
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/artists",
     element: <Artists />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
