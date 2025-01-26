@@ -23,7 +23,14 @@ function Header() {
                 <Link to={"/artists"}>Artists</Link>
               </li>
               <li>
-                <Link to="#">Send Demo</Link>
+                <Link
+                  to="#"
+                  onClick={() => {
+                    window.open("https://forms.gle/4TNRc6KAegnHKwNF6 ");
+                  }}
+                >
+                  Send Demo
+                </Link>
               </li>
             </ul>
           </nav>
