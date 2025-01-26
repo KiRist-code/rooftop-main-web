@@ -43,6 +43,10 @@ const Slogan = styled.div`
   font-weight: 500;
 `;
 
+const Icon_warp = styled.div`
+  margin: 10px;
+`;
+
 const About = () => {
   /* */
 
@@ -63,6 +67,68 @@ const About = () => {
           Contact
           <Contact_email>rftpofficial@proton.me</Contact_email>
         </Contact_warp>
+        <Icon_warp>
+          <a
+            href="/"
+            style={{
+              marginRight: `20px`,
+            }}
+          >
+            <img
+              src="assets/logo/icons8-twitter-50.png"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a
+            href="/"
+            style={{
+              marginRight: `20px`,
+            }}
+          >
+            <img
+              src="assets/logo/icons8-soundcloud-50.png"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a
+            href="/"
+            style={{
+              marginRight: `20px`,
+            }}
+          >
+            <img
+              src="assets/logo/icons8-discord-50.png"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a
+            href="/"
+            style={{
+              marginRight: `20px`,
+            }}
+          >
+            <img
+              src="assets/logo/icons8-youtube-50.png"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a
+            href="/"
+            style={{
+              marginRight: `20px`,
+            }}
+          >
+            <img
+              src="assets/logo/icons8-bandcamp-logo-50.png"
+              width="30"
+              height="30"
+            />
+          </a>
+        </Icon_warp>
         <Member_warp>
           <Member_header>
             <Member_title>member</Member_title>
