@@ -54,6 +54,7 @@ const Release = () => {
         <ReleaseHeader>
           <TextDiv className="Title">Release</TextDiv>
         </ReleaseHeader>
+        sry, this page is off now :(
       </Container_warp>
       <Footer></Footer>
     </>

@@ -12,6 +12,7 @@ import {
   Profile,
   Member,
   Name_warp,
+  PFP,
 } from "../components/about/member";
 import rooftopMember from "../data/RooftopMember.json";
 
@@ -72,11 +73,7 @@ const About = () => {
           <Member_ul>
             {Object.keys(rooftopMember).map((value: string) => (
               <Member_li>
-                <a
-                  href={rooftopMember[value as keyof typeof rooftopMember].link}
-                  rel="noreferrer"
-                  target="_blank"
-                >
+                <PFP>
                   <Profile
                     id="profile"
                     style={{
@@ -86,7 +83,21 @@ const About = () => {
                       })`,
                     }}
                   />
-                </a>
+                  <a
+                    href={
+                      rooftopMember[value as keyof typeof rooftopMember].link
+                    }
+                    style={{
+                      marginRight: `20px`,
+                    }}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span className="material-symbols-outlined">
+                      arrow_outward
+                    </span>
+                  </a>
+                </PFP>
                 <Member>
                   <Name_warp>
                     <div

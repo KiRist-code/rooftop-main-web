@@ -10,6 +10,7 @@ import {
   Member_li,
   Member_ul,
   Name_warp,
+  PFP,
   Profile,
 } from "../components/about/member";
 import featuredArtists from "../data/FeaturedArtists.json";
@@ -93,13 +94,7 @@ const Artists = () => {
           <Member_ul>
             {Object.keys(featuredArtists).map((value: string) => (
               <Member_li>
-                <a
-                  href={
-                    featuredArtists[value as keyof typeof featuredArtists].link
-                  }
-                  rel="noreferrer"
-                  target="_blank"
-                >
+                <PFP>
                   <Profile
                     id="profile"
                     style={{
@@ -107,9 +102,25 @@ const Artists = () => {
                         featuredArtists[value as keyof typeof featuredArtists]
                           .profile
                       })`,
+                      marginRight: `10px`,
                     }}
                   />
-                </a>
+                  <a
+                    href={
+                      featuredArtists[value as keyof typeof featuredArtists]
+                        .link
+                    }
+                    style={{
+                      marginRight: `20px`,
+                    }}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <span className="material-symbols-outlined">
+                      arrow_outward
+                    </span>
+                  </a>
+                </PFP>
                 <Member>
                   <Name_warp>
                     <div

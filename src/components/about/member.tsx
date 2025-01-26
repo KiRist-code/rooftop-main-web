@@ -59,3 +59,10 @@ export const Name_warp = styled.div`
   margin-bottom: 7px;
   margin-right: 10%;
 `;
+
+export const PFP = styled.div`
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  justify-content: space-between;
+`;
