@@ -15,6 +15,7 @@ import {
   PFP,
 } from "../components/about/member";
 import rooftopMember from "../data/RooftopMember.json";
+import external from "../data/external_site.json";
 
 const Container_warp = styled.div`
   margin: 40px auto;
@@ -68,66 +69,22 @@ const About = () => {
           <Contact_email>rftpofficial@proton.me</Contact_email>
         </Contact_warp>
         <Icon_warp>
-          <a
-            href="/"
-            style={{
-              marginRight: `20px`,
-            }}
-          >
-            <img
-              src="assets/logo/icons8-twitter-50.png"
-              width="30"
-              height="30"
-            />
-          </a>
-          <a
-            href="/"
-            style={{
-              marginRight: `20px`,
-            }}
-          >
-            <img
-              src="assets/logo/icons8-soundcloud-50.png"
-              width="30"
-              height="30"
-            />
-          </a>
-          <a
-            href="/"
-            style={{
-              marginRight: `20px`,
-            }}
-          >
-            <img
-              src="assets/logo/icons8-discord-50.png"
-              width="30"
-              height="30"
-            />
-          </a>
-          <a
-            href="/"
-            style={{
-              marginRight: `20px`,
-            }}
-          >
-            <img
-              src="assets/logo/icons8-youtube-50.png"
-              width="30"
-              height="30"
-            />
-          </a>
-          <a
-            href="/"
-            style={{
-              marginRight: `20px`,
-            }}
-          >
-            <img
-              src="assets/logo/icons8-bandcamp-logo-50.png"
-              width="30"
-              height="30"
-            />
-          </a>
+          {Object.keys(external).map((value: string) => (
+            <a
+              href={external[value as keyof typeof external].link}
+              rel="noreferrer"
+              target="_blank"
+              style={{
+                marginRight: `20px`,
+              }}
+            >
+              <img
+                src={external[value as keyof typeof external].src}
+                width="30"
+                height="30"
+              />
+            </a>
+          ))}
         </Icon_warp>
         <Member_warp>
           <Member_header>

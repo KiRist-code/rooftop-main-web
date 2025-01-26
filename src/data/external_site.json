@@ -1,0 +1,22 @@
+{
+  "X": {
+    "src": "assets/logo/icons8-twitter-50.png",
+    "link": "https://x.com/rftpofficial"
+  },
+  "Soundcloud": {
+    "src": "assets/logo/icons8-soundcloud-50.png",
+    "link": "https://soundcloud.com/official-rooftop"
+  },
+  "Discord": {
+    "src": "assets/logo/icons8-discord-50.png",
+    "link": "https://discord.com/invite/ZsxvvXhvnK"
+  },
+  "Youtube": {
+    "src": "assets/logo/icons8-youtube-50.png",
+    "link": "https://www.youtube.com/@rftp_official"
+  },
+  "Bandcamp": {
+    "src": "assets/logo/icons8-bandcamp-logo-50.png",
+    "link": "https://rooftop-official.bandcamp.com/"
+  }
+}
